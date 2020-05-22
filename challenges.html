@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MAXIMUS ThoughtCloud - Challenges</title>
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
+</head>
+<body onload="challengeLoad()">
+
+    <header>
+        <div class="image-header">
+            <a href="index.html"><img class="logo" src="assets/logo.svg" alt="MAXIMUS UK Logo"></a>
+        </div>        
+    </header>
+
+    <main>
+        <nav>
+            <ul class="menu-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="challenges.html">Challenges</a></li>
+                <li><a href="ideas.html">View Ideas</a></li>
+                <li><a href="submit-idea.html">Submit Idea</a></li>
+            </ul>
+        </nav> 
+
+        <div id="challenges-content">
+
+            <div id="challenges-left-content">
+                <h1>Welcome to ThoughtCloud Challenges</h1>
+                <h2>What are Challenges?</h2>
+                <p>Challenges are problems put to all staff by the Operational Excellence Panel. They may be set to support specific initatives, as a result of new business, or because we are looking for input on a specific area.</p>
+                <h2>Current Challenge</h2>
+                <p id="challenge">How can we maintain engagement with participants once they have entered employment?</p>
+                <p>Let us know your thoughts below!</p>
+
+                <form id="challenge-form" name="challenge-form">
+                    <label for="challenge-staff-name" class="required">Your name or Team name:</label>
+                    <br></br>
+                    <input type="text" id="challenge-staff-name" name="challenge-staff-name" required="required">
+                    <br></br>
+                    <label for="challenge-response" class="required">Your response:</label >
+                    <br></br>
+                    <textarea name="challenge-response" id="challenge-response" cols="30" rows="10" required="required"></textarea>
+                    <br></br>
+                    <!-- button element used instead of input type='submit' to enable logging to console without refresh -->
+                    <!-- in production this would be changed to input type='submit'-->
+                    <button type="button" class="submit-button" name="submit-challenge-button" id="submit-challenge-button">Submit</button>
+                </form>
+
+            </div>
+            <!-- /#challenges-left-content -->
+
+            <div id="challenges-right-content">
+                <h2 id="response-title">Challenge Responses</h2>
+            </div>
+            <!-- /#challenges-right-content -->     
+        </div>
+        <!-- /#challenges-content -->
+    </main>
+    
+    <footer>
+        <ul class="footer-list">
+            <li><a href="site-map.html">Site Map</a></li>
+        </ul>
+        <p>© Ed Gilmore 2019</p>
+    </footer>   
+    <script type="text/javascript" src="scripts/script.js"></script>
+</body>
+</html>

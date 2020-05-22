@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MAXIMUS ThoughtCloud - Submit Idea</title>
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
+</head>
+<body onload="sumbitIdeaLoad()">
+
+    <header>
+        <div class="image-header">
+            <a href="index.html"><img class="logo" src="assets/logo.svg" alt="MAXIMUS UK Logo"></a>
+        </div>        
+    </header>
+
+    <main>
+        <nav>
+            <ul class="menu-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="challenges.html">Challenges</a></li>
+                <li><a href="ideas.html">View Ideas</a></li>
+                <li><a href="submit-idea.html">Submit Idea</a></li>
+            </ul>
+        </nav>  
+
+        <div id="submit-idea-main-section">
+            <img src="assets/iStock_000015060506XLarge.jpg" alt="Image of two co-workers at a laptop" id="submit-idea-main-image">
+
+            <div id="submit-idea-main-text">
+                <div id="submit-idea-instructions">
+                <h1>Let us know your idea!</h1>
+                <p>Please use the form opposite to share your ideas.</p>
+                <h2>Tips:</h2>
+                <ol class="numbered-list">
+                    <li>Take the time to write your ideas down first so there is a clear flow of thought;</li>
+                    <li>Try to avoid using acronyms and contract-specific terminology;</li>
+                    <li>Don't navigate away from this page without hitting the 'Submit Idea' button, otherwise your work will be lost;</li>
+                    <li>Head over to the <a href="ideas.html">ideas</a> page to review other ideas once you're done.</li>
+                </ol>
+                </div>
+                <!-- /#submit-idea-instructions -->
+                
+                <div id="submit-idea-form-area">
+                    <form id="submit-idea-form" name="submit-idea-form">
+                        <label for="name" class="required">Your name:</label>
+                        <br></br>
+                        <input type="text" id="staff-name" name="name" required="required">
+                        <br></br>
+                        <label for="title" class="required">Give your idea a title:</label>
+                        <br></br>
+                        <input type="text" name="idea-title" id="title" required="required">
+                        <br></br>
+                        <label for="idea" class="required">Tell us about your idea:</label >
+                        <br></br>
+                        <textarea name="idea-detail" id="idea" cols="30" rows="10" required="required"></textarea>
+                        <br></br>
+                        <!-- button element used instead of input type='submit' to enable logging to console without refresh -->
+                        <!-- in production this would be changed to input type='submit'-->
+                        <button type="button" class="submit-button" name="submit-idea-button" id="submit-idea-button">Submit</button>
+                    </form>
+                </div>
+                <!-- /#submit-idea-form-area -->
+            </div>
+            <!-- /#submit-idea-main-text -->
+        </div>
+        <!-- /#submit-idea-main-section -->
+    </main>
+    
+    <footer>
+        <ul class="footer-list">
+            <li><a href="site-map.html">Site Map</a></li>
+        </ul>
+        <p>© Ed Gilmore 2019</p>
+    </footer>   
+    <script type="text/javascript" src="scripts/script.js"></script>
+</body>
+</html>
